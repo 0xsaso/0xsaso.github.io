@@ -6,18 +6,21 @@
     <description>Recent content in Posts on saso.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://0xsaso.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Hello Friend</title>
+      <title>Introduction</title>
       <link>https://0xsaso.github.io/post/hello/</link>
-      <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 26 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://0xsaso.github.io/post/hello/</guid>
-      <description>Booting&amp;hellip;</description>
+      <description>Hello!
+Having finally gotten this site up and running, I thought it would be time to do an introductory post about who I am and what I&amp;rsquo;ll be publishing here.
+Information security is a lifestyle for me as well as a profession. Outside of work, I&amp;rsquo;m usually doing CTFs, researching new methodologies and attack types, and working on a certification or course of some kind.
+I want this to be a place where I share things I&amp;rsquo;ve learned in different forms.</description>
     </item>
     
   </channel>
