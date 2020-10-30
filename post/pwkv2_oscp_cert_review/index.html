@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>PWKv2/OSCP - Certification Review :: saso.io — Blog</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="OSCP After years of certifications, CTFs, and job changes, I finally took and finished the PWKv2 course this year and got my OSCP certification. Of all the certifications I&amp;rsquo;ve worked for, this was unsurprisingly the most time-consuming and difficult to attain.
+I started my course right after PWKv2 was released, so I got to be one of the first to see the new material and lab environments. Throughout the process of learning the material and attacking lab machines, I learned a ton and would recommend it to anyone looking to really boost their confidence and expertise." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://0xsaso.github.io/post/pwkv2_oscp_cert_review/" />
+
+
+
+
+<link rel="stylesheet" href="https://0xsaso.github.io/assets/style.css">
+
+  <link rel="stylesheet" href="https://0xsaso.github.io/assets/red.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://0xsaso.github.io/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="https://0xsaso.github.io/img/favicon/red.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+<meta name="twitter:creator" content="saso" />
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="PWKv2/OSCP - Certification Review :: saso.io">
+<meta property="og:description" content="Tips and lessons learned from taking Pentesting With Kali v2 and the OSCP exam." />
+<meta property="og:url" content="https://0xsaso.github.io/post/pwkv2_oscp_cert_review/" />
+<meta property="og:site_name" content="PWKv2/OSCP - Certification Review" />
+
+  
+    <meta property="og:image" content="https://0xsaso.github.io/img/favicon/red.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2020-10-30 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    saso.io
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/">Posts</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/">Posts</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://0xsaso.github.io/post/pwkv2_oscp_cert_review/">PWKv2/OSCP - Certification Review</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2020-10-30
+    </span>
+    
+    
+    <span class="post-author">::
+      saso
+    </span>
+    
+  </div>
+
+  
+
+  
+
+  <div class="post-content"><div>
+        
+  <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fwww.offensive-security.com%2Fwp-content%2Fuploads%2F2019%2F10%2Fpwk-268x300.png&amp;sp=1599762398Td50cb3217340d032d9f682159215ea8194f550d91cb2649e264b5a6fe669d52e#center"  alt="Hello Friend"  class="center"  style="border-radius: 8px;"  />
+
+
+<h1 id="oscp">OSCP<a href="#oscp" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>After years of certifications, CTFs, and job changes, I finally took and finished the PWKv2 course this year and got my OSCP certification. Of
+all the certifications I&rsquo;ve worked for, this was unsurprisingly the most time-consuming and difficult to attain.</p>
+<p>I started my course right after PWKv2 was released, so I got to be one of the first to see the new material and lab environments. Throughout the
+process of learning the material and attacking lab machines, I learned a ton and would recommend it to anyone looking to really boost their
+confidence and expertise.</p>
+<p>That said, my journey wasn&rsquo;t without hiccups or frustrations.</p>
+<p>For those looking to take the PWKv2 course or are close to taking the OSCP exam, my goal in this post is to help you avoid some of the traps I fell in along
+the way. It won&rsquo;t contain tools I used, tips and tricks, etc.</p>
+<p>There are plenty of places to find that stuff already if you Google around
+a bit and gathering them together is part of learning!</p>
+<h1 id="my-background">My Background<a href="#my-background" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p><em>Disclaimer: I did not go into OSCP blind.</em></p>
+<p>I&rsquo;ve been working as a pentester for roughly 2.5 years. The experience I had going in mostly involved my previous career experience as a systems
+admin who focused on security monitoring, training, and configuration for an enterprise environment. While I was in that role, I got the <strong>CEHv9</strong>
+and <strong>Security+ce</strong> certifications.</p>
+<p>What experience I had apart from that came from my early days just learning computers, whether it was via game
+hacking, testing Linux distributions, or setting up networks as a hobby.</p>
+<p>After getting my first pentesting job, I formalized my knowledge around attacking as opposed to defending by deep research, online courses,
+and the <strong>GIAC Web Application Penetration Tester (GWAPT)</strong> certification (web applications were not my strong suit at the time).</p>
+<p>Having trial-by-fire exposure to network pentesting and web pentesting for a couple years was a huge game-changer going into PWKv2. I could
+comfortably breeze through about 60-70% of the material using previous knowledge.</p>
+<h1 id="how-to-spend-your-lab-time">How to Spend Your Lab Time<a href="#how-to-spend-your-lab-time" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<blockquote>
+<p>&ldquo;dont skip the lab exercises, srsly&rdquo; - Confucius</p>
+</blockquote>
+<p>One of the first things you might notice about PWKv2 is that there&rsquo;s a lot more material than in PWKv1. And I mean over twice the amount.
+Since you can only buy a maximum of 90 days of lab time, there are some things you should think about before starting:</p>
+<h3 id="0-bookvideos">0. Book/Videos<a href="#0-bookvideos" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>When I started the course, I immediately went for the actual course content to get it out of the way and get to the labs as soon as possible.</p>
+<p>Doing this pointed out gaps in my knowledge and forced me to think in ways I hadn&rsquo;t before. Going through the course content, doing what was
+effectively an expertise audit, was invaluable.</p>
+<p>As I joined hacking-centric Discord servers and read about others&rsquo; experiences with the exam, I noticed that a significant number of the people who failed their first or second attempt spent little to no time on the course content. They also often added that if they had, they probably would have passed sooner.</p>
+<p>Not going through the content absolutely defies logic. You can&rsquo;t be certain you&rsquo;re prepared for the exam if you don&rsquo;t, which leads me to my next
+point:</p>
+<h3 id="1-the-bonus-lab-report">1. The Bonus Lab Report<a href="#1-the-bonus-lab-report" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>OffSec lets you submit an optional report on all of the exercises in the book and 10 lab machines for a chance at five (5) extra points on your exam. You should
+decide if you&rsquo;re going to do this before even starting (you definitely should) and spend your lab time accordingly (seriously, do the bonus report).</p>
+<p>Assuming you&rsquo;ve decided to go for the bonus points, I <em>highly</em> recommend writing your lab report as you go as if you were going to submit it without
+revisions. You&rsquo;ll need the lab time to complete all of the exercises and you don&rsquo;t want to end up buying extra lab time (like me) just to get your
+bonus points.</p>
+<p>The lab report will take you a long time. It took me about a month (one-third of my lab time) to get through the book and videos because of all the
+additional material. This left me with only 60 days to actually attack the lab machines. The final draft was just under 400 pages.</p>
+<p>When all is said and done, you will have struggled through every book exercise and learned a lot along the way that will help you build your
+methodology (which I&rsquo;ll talk about in the next sections) and build a deep understanding of the concepts that OffSec has included.</p>
+<h3 id="2-metasploitsqlmap-usage">2. Metasploit/Sqlmap Usage<a href="#2-metasploitsqlmap-usage" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Whether or not you should use these in the lab environment is hotly debated and both sides make good points. The pros and cons of using these two
+tools, in particular are, to me, as follows:</p>
+<p><strong>Pros</strong></p>
+<ul>
+<li>Practice with tools you&rsquo;ll probably use in the real world</li>
+<li>Faster compromise of machines (less time being stuck and not moving on to others)</li>
+<li>Easier lab report writing</li>
+</ul>
+<p><strong>Cons</strong></p>
+<ul>
+<li>Less experience with using non-Metasploit exploits</li>
+<li>Shallower understanding of how exploits you use actually work</li>
+<li>False sense of preparedness come exam time</li>
+</ul>
+<p>My approach was to use Metasploit and SQLmap when I needed them so I didn&rsquo;t get stuck on a box too long (and miss valuable experience with another),
+but I kept track of the boxes I used them on and went back and did them manually once I called it quits on the attack labs (I ended up with over
+50 boxes rooted).</p>
+<p>Knowing how to manually exploit network services and web apps is crucial since you can&rsquo;t use automatic exploitation tools in the exam. Don&rsquo;t make
+them your crutch.</p>
+<h3 id="3-your-methodology">3. Your Methodology<a href="#3-your-methodology" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Use your time in the labs to establish your own way of attacking boxes. Repeat it, improve it, and document it. This will help you recognize when
+a situation is something you have dealt with before and when you&rsquo;re out of your element and need to do some research.</p>
+<p>This process should help you curate a tool set you like (in addition to tools the book teaches you about) and a collection of payloads that are good to have on-hand. Don&rsquo;t get caught up in how many
+different tools you can use to do automatic enumeration or scanning.</p>
+<p>Find the tools that work and stick to them.</p>
+<h1 id="the-exam">The Exam<a href="#the-exam" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>I can&rsquo;t understate how daunting this exam is.</p>
+<p>No matter how prepared you are for it, 24 hours to hack as much as possible isn&rsquo;t much. This, according to OffSec, is on purpose.</p>
+<p>The true adversary for that 24-hour period isn&rsquo;t OffSec and it isn&rsquo;t your target range.</p>
+<p><strong>It&rsquo;s your own mind.</strong></p>
+<p>Everything else is secondary. Here&rsquo;s what I mean by that:</p>
+<ol start="0">
+<li><strong>Time is a safety net.</strong> Your brain sees things differently when the clock is ticking down.</li>
+<li><strong>Sleep is a gamble.</strong> You&rsquo;re going to get tired. If you&rsquo;re like me, after about 15 hours, you&rsquo;ll start typing slower, thinking less clearly,
+and obsessively calculating your points to see how close you are.</li>
+<li><strong>Not making progress feels like doom.</strong> Every minute that goes by without some measure of success feels like failure.</li>
+</ol>
+<p>Before going into the exam, you should be ready to defeat your own mind. There are many ways of going this. Common advice you&rsquo;ll see around the
+internet includes taking breaks, staying hydrated, having checklists, etc.</p>
+<p>That last one was the most important for me. Knowing what to check, what commands to run, and what tools to use for every situation you come
+across will keep you from wondering if there&rsquo;s something you missed. If all your boxes have been checked, you missed something you weren&rsquo;t ready for.</p>
+<p>The time to start searching around for new ideas and techniques is after you&rsquo;ve exhausted all your options, not before.</p>
+<p>After the exam comes the report. My advice, both from experience and from listening to people more experienced than me, is to write the report as you
+go.</p>
+<p>You&rsquo;ll have a whole 24 hours after your exam time concludes to draft the report in an official format. You should use as much of this time as you need
+to make sure the report is perfect, but you should also document your process as you go.</p>
+<p>Don&rsquo;t get to your report and realize you&rsquo;re missing a screenshot. Capture <strong>everything</strong> as you go and refine it later.</p>
+
+      </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        
+        <span class="button next">
+            <a href="https://0xsaso.github.io/post/hello/">
+                <span class="button__text">Introduction</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://0xsaso.github.io/assets/main.js"></script>
+<script src="https://0xsaso.github.io/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

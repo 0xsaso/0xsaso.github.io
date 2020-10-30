@@ -6,10 +6,20 @@
     <description>Recent content in Posts on saso.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://0xsaso.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>PWKv2/OSCP - Certification Review</title>
+      <link>https://0xsaso.github.io/post/pwkv2_oscp_cert_review/</link>
+      <pubDate>Fri, 30 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://0xsaso.github.io/post/pwkv2_oscp_cert_review/</guid>
+      <description>OSCP After years of certifications, CTFs, and job changes, I finally took and finished the PWKv2 course this year and got my OSCP certification. Of all the certifications I&amp;rsquo;ve worked for, this was unsurprisingly the most time-consuming and difficult to attain.
+I started my course right after PWKv2 was released, so I got to be one of the first to see the new material and lab environments. Throughout the process of learning the material and attacking lab machines, I learned a ton and would recommend it to anyone looking to really boost their confidence and expertise.</description>
+    </item>
     
     <item>
       <title>Introduction</title>
