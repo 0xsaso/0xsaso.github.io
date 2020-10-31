@@ -3,44 +3,44 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>saso.io/post/</loc>
+    <loc>/post/</loc>
     <lastmod>2020-10-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>saso.io/post/pwkv2_oscp_cert_review/</loc>
+    <loc>/post/pwkv2_oscp_cert_review/</loc>
     <lastmod>2020-10-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>saso.io/</loc>
+    <loc>/</loc>
     <lastmod>2020-10-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>saso.io/post/hello/</loc>
+    <loc>/post/hello/</loc>
     <lastmod>2020-06-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>saso.io/showcase/</loc>
+    <loc>/showcase/</loc>
     <lastmod>2019-01-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>saso.io/about/</loc>
+    <loc>/about/</loc>
   </url>
   
   <url>
-    <loc>saso.io/archive/</loc>
+    <loc>/archive/</loc>
   </url>
   
   <url>
-    <loc>saso.io/categories/</loc>
+    <loc>/categories/</loc>
   </url>
   
   <url>
-    <loc>saso.io/tags/</loc>
+    <loc>/tags/</loc>
   </url>
   
 </urlset>
