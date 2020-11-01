@@ -15,22 +15,18 @@
     
     
     <item>
-      <title>PWKv2/OSCP - Certification Review</title>
-      <link>/post/pwkv2_oscp_cert_review/</link>
+      <title>Certification Review: OSCP (PWKv2)</title>
+      <link>/post/2020_10_30_cert_review_pwkv2/</link>
       <pubDate>Fri, 30 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/pwkv2_oscp_cert_review/</guid>
+      <guid>/post/2020_10_30_cert_review_pwkv2/</guid>
       <description>
         
-          &lt;img src=&#34;/img/oscp.png&#34;/&gt;
+          &lt;img src=&#34;/post/2020_10_30_cert_review_pwkv2/oscp.png&#34;/&gt;
           
         
         
-        
-  &lt;img src=&#34;https://images.youracclaim.com/size/340x340/images/e3c9ad3c-b142-45ae-bb2b-2f19ff2b742a/PWK-OSCP-badge.png&#34;  alt=&#34;OSCP logo&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;  /&gt;
-
-
-&lt;h1 id=&#34;oscp&#34;&gt;OSCP&lt;/h1&gt;
+        &lt;h1 id=&#34;oscp&#34;&gt;OSCP&lt;/h1&gt;
 &lt;p&gt;After years of certifications, CTFs, and job changes, I finally took and finished the PWKv2 course this year and got my OSCP certification. Of
 all the certifications I&amp;rsquo;ve worked for, this was unsurprisingly the most time-consuming and difficult to attain.&lt;/p&gt;
 &lt;p&gt;I started my course right after PWKv2 was released, so I got to be one of the first to see the new material and lab environments. Throughout the
@@ -130,10 +126,10 @@ to make sure the report is perfect, but you should also document your process as
     
     <item>
       <title>Introduction</title>
-      <link>/post/hello/</link>
+      <link>/post/2020_06_26_intro/</link>
       <pubDate>Fri, 26 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/hello/</guid>
+      <guid>/post/2020_06_26_intro/</guid>
       <description>
         
           
